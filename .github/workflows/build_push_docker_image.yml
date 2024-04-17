@@ -21,7 +21,7 @@ jobs:
        
        - name: build image docker    
          run: |
-           docker build --tag yoriknyssen/mapds:latest
+           docker build --tag yoriknyssen/mapds:latest .
            
        - name: push image docker 
          run: |
