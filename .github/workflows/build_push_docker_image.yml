@@ -21,12 +21,12 @@ jobs:
        
        - name: build image docker    
          run: |
-           docker build --tag yoriknyssen/mapds:v0.0.1 .
+           docker build --tag yoriknyssen/mapds:v0.0.2 .
            
        - name: push image docker 
          run: |
           # Login in dockerhub
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
           # Push image in dockerhub
-          docker push yoriknyssen/mapds:v0.0.1
+          docker push yoriknyssen/mapds:v0.0.2
       
