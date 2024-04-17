@@ -28,5 +28,5 @@ jobs:
           # Login in dockerhub
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
           # Push image in dockerhub
-          docker push yoriknyssen/mapds:latest
+          docker push yoriknyssen/mapds:v0.0.1
       
