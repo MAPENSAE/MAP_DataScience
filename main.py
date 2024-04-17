@@ -134,7 +134,7 @@ def serve():
         </head>
         <body>
             <h1>Parking places detection model</h1>
-            <form action="/proxy/8000/fetch-and-display-image" method="post">
+            <form action="/proxy/5000/fetch-and-display-image" method="post">
                 <input type="text" name="username" placeholder="Enter your username">
                 <input type="text" name="image_url" placeholder="Enter Image URL here">
                 <button type="submit">Show Prediction</button>
@@ -206,11 +206,11 @@ async def fetch_and_display_image(image_url: str = Form(...), username: str = Fo
             <body>
                 <h1>Original Image and Prediction</h1>
                 <div style="display: flex; justify-content: space-around;">
-                    <div><img src="/proxy/8000/static/{username}/{save_name}" alt="Prediction Visualization"></div>
+                    <div><img src="/proxy/5000/static/{username}/{save_name}" alt="Prediction Visualization"></div>
                 </div>
                 <!-- Button to go back to the main page -->
                 <div style="margin-top: 20px; text-align: center;">
-                    <button onclick="window.location.href='/proxy/8000/';">Back to Main Page</button>
+                    <button onclick="window.location.href='/proxy/5000/';">Back to Main Page</button>
                 </div>
             </body>
         </html>
