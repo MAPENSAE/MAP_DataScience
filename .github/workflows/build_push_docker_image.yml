@@ -10,21 +10,21 @@ jobs:
      
      steps:
        - name: copy the code
-       - uses: actions/checkout@v3
+         uses: actions/checkout@v3
 
        - name: recreate env file 
-       - run: |
+         run: |
           echo - "AWS_S3_ENDPOINT=${{secrets.AWS_S3_ENDPOINT}}" > .env
           echo - "AWS_ACCESS_KEY_ID=${{secrets.AWS_ACCESS_KEY_ID}}" >> .env
           echo - "AWS_SECRET_ACCESS_KEY=${{secrets.AWS_SECRET_ACCESS_KEY}}" >> .env
           echo - "AWS_SESSION_TOKEN=${{secrets.AWS_SESSION_TOKEN}}" >> .env
        
        - name: build image docker    
-       - run: |
+         run: |
            docker build --tag yoriknyssen/mapds:latest
            
        - name: push image docker 
-       - run: |
+         run: |
           # Login in dockerhub
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
           # Push image in dockerhub
