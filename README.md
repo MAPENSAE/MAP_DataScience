@@ -67,6 +67,14 @@ Lors de la revue de code, si vous souhaitez utiliser l'API mise en ligne il sera
 des fichiers d'environnement contenant les tokens d'accès aux données situées sur le stockage S3 du SSPCloud devront être renouveler, ce qui nécessite un redéploiement.  
 Dans ce cas, vous pouvez envoyer un mail à maxime.richaudeau@ensae.fr afin de réaliser cette tâche et qu'il puisse vous transmettre le lien web de l'API une fois déployée.
 
+Le projet a besoin d'un fichier .env pour fonctionner en local. Il contient notamment les secrets pour donner les accès à l'api au stockage S3 de maximerichaudeau1. Il est de la forme suivante.
+```code
+AWS_S3_ENDPOINT = minio.lab.sspcloud.fr
+AWS_ACCESS_KEY_ID = <your_acces_key_id>
+AWS_SECRET_ACCESS_KEY = <your_secret_access_key>
+AWS_SESSION_TOKEN = <your_session_token>
+```
+
 # Contribuer 
 
 ## Cas Spécifique
@@ -120,23 +128,23 @@ Les bonnes pratiques de développement ci-dessous sont les **indispensables de c
 - [x] **Utilisation de Git**
   - Présence d’un fichier `.gitignore` adapté au langage et avec des règles additionnelles pour respecter les bonnes pratiques de _versioning_
   - Travail collaboratif : utilisation de branches et des _pull requests_
-- [ ] **Présence d’un fichier `README`** présentant le projet : 
+- [x] **Présence d’un fichier `README`** présentant le projet : 
   - [x] contexte
   - [x] objectif
-  - [ ] comment l’utiliser
-- [ ] **Présence d’un fichier `LICENSE`** déclarant la licence (_open-source_) d’exploitation du projet.
-- [ ] **Versioning des packages** : présence d’un fichier `requirements.txt` ou d’un fichier d’environnement `environment.yml` pour conda
+  - [x] comment l’utiliser : voir la partie revue de code.
+- [x] **Présence d’un fichier `LICENSE`** déclarant la licence (_open-source_) d’exploitation du projet.
+- [x] **Versioning des packages** : présence d’un fichier `requirements.txt` ou d’un fichier d’environnement `environment.yml` pour conda
 
-- [ ] **Qualité du code**
-  - Respect des standards communautaires : utiliser un _linter_ et/ou un _formatter_
-  - Modularité : un script principal qui appelle des modules
+- [x] **Qualité du code**
+  - [x] Respect des standards communautaires : utiliser un _linter_ et/ou un _formatter_
+  - [x] Modularité : un script principal qui appelle des modules
 
 - [ ] **Structure des projets**
-  - Respect des standards communautaires (_cookiecutter_)
-  - Modularité du projet selon le modèle évoqué dans le cours:
-    - Code sur GitHub
-    - Données sur S3
-    - Fichiers de configuration (_secrets_, etc.) à part
+  - [ ]Respect des standards communautaires (_cookiecutter_)
+  - [x] Modularité du projet selon le modèle évoqué dans le cours:
+    - [x] Code sur GitHub
+    - [x] Données sur S3
+    - [x] Fichiers de configuration (_secrets_, etc.) à part
 
 # Parcours MLOps
 
@@ -146,14 +154,14 @@ Les bonnes pratiques de développement ci-dessous sont les **indispensables de c
 
 ## Etapes :
 
-- [ ] **Respecter la _checklist_ des bonnes pratiques de développement** ;
-- [ ] **Développer un modèle de ML qui répond à un besoin métier** ;
+- [x] **Respecter la _checklist_ des bonnes pratiques de développement** ;
+- [x] **Développer un modèle de ML qui répond à un besoin métier** : Nous avons repris un ancien projet;
 - [ ] **Entraîner le modèle via validation croisée, avec une procédure de _fine-tuning_ des hyperparamètres** ;
 - [ ] **Formaliser le processus de _fine-tuning_ de manière reproductible via MLFlow** ;
-- [ ] **Construire une API avec Fastapi pour exposer le meilleur modèle** ;
-- [ ] **Créer une image Docker pour mettre à disposition l'API** ;
-- [ ] **Déployer l'API sur le SSP Cloud** ;
-- [ ] **Industrialiser le déploiement en mode GitOps avec ArgoCD** ;
+- [x] **Construire une API avec Fastapi pour exposer le meilleur modèle** ;
+- [x] **Créer une image Docker pour mettre à disposition l'API** ;
+- [x] **Déployer l'API sur le SSP Cloud** ;
+- [x] **Industrialiser le déploiement en mode GitOps avec ArgoCD** ;
 - [ ] **Gérer le monitoring de l'application : _logs, dashboard_ de suivi des performances, etc.**
 
 
