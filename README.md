@@ -65,7 +65,14 @@ Une fois l'API lancée il suffit d'entrer l'adresse qui s'affiche dans le termin
 # Revue de code
 Lors de la revue de code, si vous souhaitez utiliser l'API mise en ligne il sera surement nécessaire de rédéployer l'ensemble de la solution car 
 des fichiers d'environnement contenant les tokens d'accès aux données situées sur le stockage S3 du SSPCloud devront être renouveler, ce qui nécessite un redéploiement.  
-Dans ce cas, vous pouvez envoyer un mail à maxime.richaudeau@ensae.fr afin de réaliser cette tâche et qu'il puisse vous transmettre le lien web de l'API une fois déployée.
+Dans ce cas, vous pouvez envoyer un mail à maxime.richaudeau@ensae.fr afin de réaliser cette tâche et qu'il puisse vous transmettre le lien web de l'API une fois déployée. 
+Une fois l'api redéployée, vous pouvez vous rendre à l'adresse : [Notre API](https://mapds.kub.sspcloud.fr/)  
+Il vous sera demandé : 
+
+- un username : s'il vous plait de préférence en minuscule sans caractère spéciaux ni espace.
+- le lien vers une image contenant des places de parking : [Exemple d'image](https://www.coranthin.com/wp-content/uploads/2016/10/images2parking-50.jpg)
+
+Valider la sélection et le modèle devrait vous renvoyer le mask correspondant aux places de parking. Le modèle est imparfait mais l'idée est là.
 
 Le projet a besoin d'un fichier .env pour fonctionner en local. Il contient notamment les secrets pour donner les accès à l'api au stockage S3 de maximerichaudeau1. Il est de la forme suivante.
 ```code
