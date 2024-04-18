@@ -8,7 +8,9 @@
     - [Développement du Modèle](#d%C3%A9veloppement-du-mod%C3%A8le)
     - [Prochaines Étapes et Tests](#prochaines-%C3%A9tapes-et-tests)
     - [Instructions d'Exécution](#instructions-dex%C3%A9cution)
+    - [Instructions d'utilisation de l'API](#instructions-dutilisation-de-lapi)
     - [Bibliographie](#bibliographie)
+- [Revue de code](#revue-de-code)
 - [Contribuer](#contribuer)
     - [Cas Spécifique](#cas-sp%C3%A9cifique)
 - [Évaluation](#%C3%A9valuation)
@@ -20,7 +22,6 @@
 - [Séparation code Data](#s%C3%A9paration-code-data)
 
 <!-- /TOC -->
-
 # Détection de Places de Parking Libres par Images Satellitaires
 
 ## Aperçu du Projet
@@ -60,6 +61,11 @@ Une fois l'API lancée il suffit d'entrer l'adresse qui s'affiche dans le termin
 6. [Albumentations. (Documentation). "PyTorch Semantic Segmentation."](https://albumentations.ai/docs/examples/pytorch_semantic_segmentation/)
 7. [TernausNet GitHub Repository.](https://github.com/ternaus/TernausNet/tree/master)
 8. [PyTorch Tutorials. "Data Loading and Processing Tutorial."](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+
+# Revue de code
+Lors de la revue de code, si vous souhaitez utiliser l'API mise en ligne il sera surement nécessaire de rédéployer l'ensemble de la solution car 
+des fichiers d'environnement contenant les tokens d'accès aux données situées sur le stockage S3 du SSPCloud devront être renouveler, ce qui nécessite un redéploiement.  
+Dans ce cas, vous pouvez envoyer un mail à maxime.richaudeau@ensae.fr afin de réaliser cette tâche et qu'il puisse vous transmettre le lien web de l'API une fois déployée.
 
 # Contribuer 
 
