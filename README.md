@@ -25,7 +25,7 @@
 # Détection de Places de Parking Libres par Images Satellitaires
 
 ## Aperçu du Projet
-Ce projet vise à développer un modèle d'apprentissage automatique pour détecter les places de parking libres à partir d'images satellitaires. Initié par Maxime RICHAUDEAU et Yorik NYSSEN, l'inspiration est venue des difficultés rencontrées pour trouver des places de parking en arrivant à destination en utilisant des applications de navigation GPS comme Waze.
+Ce projet vise à développer un modèle d'apprentissage automatique pour détecter les places de parking libres à partir d'images satellitaires. Initié par Maxime RICHAUDEAU et Yorik NYSSEN, l'inspiration est venue des difficultés rencontrées pour trouver des places de parking en arrivant à destination en utilisant des applications de navigation GPS comme Waze. Mise en production du projet réalisée par Maxime RICHAUDEAU, Yorik NYSSEN, Ilias RAZIG et Jérémy DREUMONT.
 
 ## Création du Jeu de Données
 
